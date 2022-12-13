@@ -1,0 +1,4 @@
+.env 
+node_modules
+
+# we are ignoring these bcz we don't want to commit both the files. We don't want to commit our "node_modules" to our git repository and this is bcz node modules is just all of our installed dependencies and ".env" could contain secret sensitive information we don't want to show to the world

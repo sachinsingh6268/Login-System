@@ -1,0 +1,23 @@
+<h1>Login</h1>
+<% if(messages.error){ %> <!-- this is essentially saying that we have an error message and the way this message is get set is flash is going to set a messages variable to all our differnt flash messages and passport is going to set a error message here which is going to be whatever error that we get in the "passport-config.js" while calling the middleware. IF WE DO HAVE AN ERROR BEING SET WE WANT TO DO IS WE JUST WANT TO RENDER THAT AND THE SAME WE ARE DOING HERE-->
+    <%= messages.error %> 
+<% } %> 
+<form action="/login" method="post">
+
+    <div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Registered Email">
+
+        <br><br>
+
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" placeholder="Enter the Password">
+
+    </div>
+    <br>
+
+    <input type="submit" value="Login">
+    <br>
+    <a href="/register">Register</a>
+</form>

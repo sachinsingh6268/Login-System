@@ -1,0 +1,6 @@
+<h1>Hi <%= name %>   </h1>
+
+<!-- Here POST method is being overriden by DELETE method, we have to do this bcz there is no delete function in the forms -->
+<form action="/logout?_method=DELETE" method="post">
+    <button type="submit">Log Out</button>
+</form>
